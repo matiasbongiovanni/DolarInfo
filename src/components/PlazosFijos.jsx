@@ -15,7 +15,7 @@ export default function Cotizaciones() {
   }
 
   return (
-    <div className="bg-[#121212] p-6 rounded-xl">
+    <section className="bg-[#121212] p-6 rounded-xl" id='Plazos-Fijos'>
       <label className='opacity-50 text-lg p-2'>Rendimientos de plazos fijos en los principales bancos.</label>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-4 pt-5">
         {data.map((item, index) => (
@@ -30,6 +30,6 @@ export default function Cotizaciones() {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

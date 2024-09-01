@@ -1,13 +1,5 @@
 import React, { useEffect, useState } from 'react';
 
-const walletLogos = {
-  "Banco Nación": "/assets/banco-nacion.svg",
-  "Mercado Pago": "/assets/mercadopago.svg",
-  "Naranja X": "/assets/naranja-x.svg",
-  "Prex": "https://asset.cloudinary.com/dvp3zdwws/f58e8f6830371c7f8f6a74235eb487ae",
-  "Frances": "https://asset.cloudinary.com/dvp3zdwws/f58e8f6830371c7f8f6a74235eb487ae",
-};
-
 export default function Cotizaciones() {
   const [data, setData] = useState([]); 
 
@@ -18,12 +10,12 @@ export default function Cotizaciones() {
       .catch(error => console.error('Error fetching data:', error));
   }, []);
 
-  if (!data.length) {
+  if (!data) {
     return <div>Cargando Datos...</div>;
   }
 
   return (
-    <div className="bg-[#121212] p-6 rounded-xl">
+    <section className="bg-[#121212] p-6 rounded-xl" id='Billeteras'>
         <label className='opacity-50 text-lg p-2'>Rendimientos de las principales billeteres virtuales.</label>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-4 pt-5">
         {data.map((item, index) => (
@@ -38,6 +30,6 @@ export default function Cotizaciones() {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

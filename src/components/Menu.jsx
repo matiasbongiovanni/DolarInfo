@@ -8,7 +8,6 @@ export default function Component() {
 
   const menuItems = [
     { label: 'Dolares', href: '#Dolares' },
-    { label: 'Criptomonedas', href: '#Criptomonedas' },
     { label: 'Plazos Fijos', href: '#Plazos-Fijos' },
     { label: 'Billeteras Virtuales', href: '#Billeteras' },
   ]

@@ -30,7 +30,6 @@ export default function Cotizaciones() {
           </div>
         ))}
       </div>
-      <p className='text-center p-3 font-medium opacity-75 text-balance pt-5'>Ultima Actualización: 01/09/2024 | 2:35</p>
     </section>
   );
 }
